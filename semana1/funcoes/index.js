@@ -52,11 +52,46 @@ imprimeapresentacao()
 //Ela deve retornar uma string que unifique todas 
 //as informações da pessoa em uma só mensagem com o template:
 
+//function imprimeapresentacao(nome, idade, cidade, profissao){
+//console.log(`Eu sou ${nome}, tenho ${idade} anos, moro em ${cidade} e sou ${profissao}.`)
+//}    
+//imprimeapresentacao("ricardo", 40, "CampinaGrande", "motorista")
 
-function imprimeapresentacao(){
-    const nome = Ricardo
-    const idade = 40
-    const cidade = Campina SVGLinearGradientElement
-console.log(`Eu sou ${nome}, tenho ${idade} anos, moro em ${cidade} e sou ${profissao}.`)
-}    
-imprimeapresentacao()
+// ================2 .Escreva as funções explicadas abaixo ============================
+
+//a) Escreva uma função que receba 2 números como parâmetros, e, dentro da função, 
+//faça a soma das duas entradas e retorne o resultado. 
+//Invoque a função e imprima no console o resultado.
+/*
+function somaDoisNumeros (num1, num2){
+    const soma = num1 + num2
+    return soma 
+}
+const resultado = somaDoisNumeros(4,9)
+console.log(resultado)
+
+*/
+
+//b) Faça uma função que recebe 2 números e retorne um booleano que 
+//informa se o primeiro número é **maior ou igual** ao segundo.
+/*
+function doisNumeros(num1, num2){
+return num1>=num2  
+}
+const resultado = doisNumeros(5, 7)
+console.log(resultado)
+*/
+
+
+//c) Escreva uma função que receba um número e 
+//devolva um booleano indicando se ele é par ou não
+function numero(numero1){
+    return  numero1%2==0
+}
+const resultado = numero(8)
+console.log = resultado
+
+
+
+//d) Faça uma função que recebe uma mensagem (`string`) como parâmetro 
+//e imprima o tamanho dessa mensagem, juntamente com uma versão dela em letras maiúsculas.
