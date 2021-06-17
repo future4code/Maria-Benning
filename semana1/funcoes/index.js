@@ -52,7 +52,6 @@ imprimeapresentacao()
 //Ela deve retornar uma string que unifique todas 
 //as informações da pessoa em uma só mensagem com o template:
 
-
 //function imprimeapresentacao(nome, idade, cidade, profissao){
 //console.log(`Eu sou ${nome}, tenho ${idade} anos, moro em ${cidade} e sou ${profissao}.`)
 //}    
