@@ -85,11 +85,13 @@ console.log(resultado)
 
 //c) Escreva uma função que receba um número e 
 //devolva um booleano indicando se ele é par ou não
+/*
 function numero(numero1){
     return  numero1%2==0
 }
 const resultado = numero(8)
-console.log = resultado
+console.log = resultado*/
+
 
 
 
