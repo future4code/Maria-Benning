@@ -7,10 +7,11 @@
         console.log(minhaFuncao(2))
         console.log(minhaFuncao(10))
         a) O que vai ser impresso no console?  
-        // 10  ,  500
+        // 10  ,  50
 
         b) O que aconteceria se retirasse os dois `console.log` e simplesmente invocasse a função
-         `minhaFuncao(2)` e `minhaFuncao(10)`? O que apareceria no console? // daria erro
+         `minhaFuncao(2)` e `minhaFuncao(10)`? 
+         O que apareceria no console? // não vai aparecer nada
 
     2. Leia o código abaixo
 
@@ -32,7 +33,8 @@
 
 
 ======================2. Exercicio de escrita de código
-1. Escreva as funções explicadas abaixo:
+
+====================1. Escreva as funções explicadas abaixo:===========================
  a) A função não deve receber nenhum parâmetro e deve imprimir uma mensagem falando 
  algumas informações sobre você, como: 
 "Eu sou Caio, tenho 23 anos, moro em São Paulo e sou estudante."
@@ -40,22 +42,40 @@ Troque o nome, idade, cidade e se é estudante ou não por informações sobre v
 Lembrando que a função não possui entradas, apenas imprime essa mensagem. */
 
 
-/*function imprimeapresentacao(){
-console.log("Eu sou Maria, tenho 28 anos, moro em Campina Grande - Pb e sou estudante.")
+/*
+const nome = "Maria"
+const idade = 28
+const cidade = "CampinaGrande"
+const profissao = "Estudante"
+function imprimeapresentacao(){
+console.log(`Eu sou ${nome}, tenho ${idade} anos, moro em ${cidade} e sou ${profissao}.`)
 }
 imprimeapresentacao()
 */
+
 
 // b)  Agora escreva uma função que receba 4 parâmetros que 
 //correspondem às informações de uma pessoa:
 // o nome (string), a idade (number), a cidade (string) e uma profissão (string). 
 //Ela deve retornar uma string que unifique todas 
 //as informações da pessoa em uma só mensagem com o template:
+// feito por mimm ========================
 
-//function imprimeapresentacao(nome, idade, cidade, profissao){
-//console.log(`Eu sou ${nome}, tenho ${idade} anos, moro em ${cidade} e sou ${profissao}.`)
-//}    
-//imprimeapresentacao("ricardo", 40, "CampinaGrande", "motorista")
+/* function imprimeapresentacao(nome, idade, cidade, profissao){
+console.log(`Eu sou ${nome}, tenho ${idade} anos, moro em ${cidade} e sou ${profissao}.`)
+}    
+imprimeapresentacao("ricardo", 40, "CampinaGrande", "motorista")
+*/
+
+// metodo da correção
+/*
+function imprimeapresentacao(nome, idade, cidade, profissao) {
+    return`Eu sou ${nome}, tenho ${idade} anos, moro em ${cidade} e sou ${profissao}` 
+}    
+    const frase = imprimeapresentacao("ricardo", 40, "CampinaGrande", "motorista")
+console.log(frase)
+*/
+
 
 // ================2 .Escreva as funções explicadas abaixo ============================
 
@@ -85,15 +105,24 @@ console.log(resultado)
 
 //c) Escreva uma função que receba um número e 
 //devolva um booleano indicando se ele é par ou não
-/*
-function numero(numero1){
-    return  numero1%2==0
-}
-const resultado = numero(8)
-console.log = resultado*/
 
+/*
+function verificaParidade(numero){
+    return  numero % 2 === 0
+}
+const ehPar = verificaParidade(7)
+console.log(ehPar)
+*/
 
 
 
 //d) Faça uma função que recebe uma mensagem (`string`) como parâmetro 
 //e imprima o tamanho dessa mensagem, juntamente com uma versão dela em letras maiúsculas.
+
+function mensagem (texto){
+    return `${texto.length}, ${texto.toUpperCase}`
+}
+
+console.log(mensagem)
+
+
