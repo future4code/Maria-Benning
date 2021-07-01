@@ -1,8 +1,26 @@
+h1{ 
+    
+columns: rgba(40, 119, 192, 0.822);
+background-color: rgb(115, 222, 226);
+
+}
+
+a{
+    color: black;
+    background-color: rgb(115, 222, 226);
+        ;
+        display: inline-block
+}
 
 
-h2{
-    background-color: gold;
-    display: inline
+
+
+
+
+
+h2 {
+background-color: rgb(115, 222, 226);
+display: inline;
 }
 
 
@@ -11,9 +29,7 @@ h2{
     }
 
 
-    a{
-        color: red;
-    }
+  
 
 
-
+    
