@@ -23,6 +23,8 @@ input {
 
 button:focus {
     color: white;
+   
+    
 }
 
 img {
@@ -48,6 +50,7 @@ div img {
 
 .botao-amarelo:hover {
     background-color: #c44f00;
+
 }
 
 .container {
@@ -77,6 +80,13 @@ div img {
 
 #container-para-comprar {
     background-color: #e7eb90;
+    position: relative ;
+}
+
+#container-para-comprar>a {
+    position: absolute ;
+    top: 200px;
+    right: 600px;
 }
 
 #container-para-comprar>p {
