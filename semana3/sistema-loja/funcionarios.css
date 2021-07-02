@@ -1,11 +1,29 @@
-h2{
-    background-color: gold;
-    display: inline
+
+p{ columns: rgba(40, 119, 192, 0.822);
+    background-color: rgb(115, 222, 226);
 }
 
+
+a{
+    color: black;
+    background-color: rgb(115, 222, 226);
+        ;
+        display: inline-block
+}
+
+
+h2{
+background-color: rgb(115, 222, 226);
+display: inline;
+}
+
+
+
+
+
 li{
-    background-color: rgb(219, 15, 15);
-  
+    background-color: rgb(247, 247, 140);
+   display: block
 }
 
 
@@ -15,6 +33,4 @@ li{
     }
 
 
-    a{
-        color: red;
-    }
+   

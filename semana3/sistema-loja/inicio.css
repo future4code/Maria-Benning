@@ -1,16 +1,21 @@
 
 .lojinha-da-mah{
-    color: rgb(40, 119, 192);
+    color: rgba(40, 119, 192, 0.822);
     }
 
-h1{
-    color: red;
+h1 {
+    background-color: rgb(115, 222, 226);
+    
 }
 
 p{
     color: rgb(8, 8, 8);
-    background-color: red}
+    background-color:  rgb(247, 247, 140)
+}
 
     a{
-        color: red;
+        color: rgb(5, 5, 5);
+        background-color: rgb(115, 222, 226);
+        ;
+        display: inline-block
     }
