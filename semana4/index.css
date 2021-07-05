@@ -1,0 +1,19 @@
+
+div img {
+    height: 40px;
+}
+
+div p{
+    justify-content: space-between;
+    
+}
+
+header {
+    display: flex;
+    border: ;
+    }
+
+
+button{
+    justify-content: space-between;
+}
