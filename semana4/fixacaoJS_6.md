@@ -1,4 +1,5 @@
-function filtraTarefas() {
+
+```function filtraTarefas() {
   const tarefas = [
     { titulo: "Fazer Remember", status: "done", tempo: 30 },
     { titulo: "Fazer Challange", status: "todo", tempo: 30 },
@@ -19,3 +20,5 @@ const tarefasTerminadas = tarefas.map((finalizadas) =>{
  // Escreva seu código aqui
 return tarefasTerminadas
 }
+
+```
