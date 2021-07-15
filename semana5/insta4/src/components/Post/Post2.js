@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { isStyledComponent } from 'styled-components'
 
 import {IconeComContador} from '../IconeComContador/IconeComContador'
 
@@ -49,8 +49,19 @@ class Post extends React.Component {
   }
 
   onClickCurtida = () => {
-    console.log('Curtiu!')
-  }
+    
+    
+      this.setState({
+        curtido: !this.state.curtido,
+      })
+      if (this.state.numeroCurtidas ===0) {
+        this.setState({numeroCurtidas:1})
+      } else {
+        this.setState({numeroCurtidas:0})
+      }
+  
+      console.log('Curtiu!')
+    }
 
   onClickComentario = () => {
     this.setState({

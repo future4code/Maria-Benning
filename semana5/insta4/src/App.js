@@ -25,12 +25,12 @@ class App extends React.Component {
         <Post2
           nomeUsuario={'Maria'}
           fotoUsuario={'https://picsum.photos/50/50'}
-          fotoPost={'https://picsum.photos/200/150'}
+          fotoPost={'https://picsum.photos/200/150?a=1'}
         />
          <Post3
           nomeUsuario={'Mariana'}
           fotoUsuario={'https://picsum.photos/50/50'}
-          fotoPost={'https://picsum.photos/200/150'}
+          fotoPost={'https://picsum.photos/200/150?=2'}
         />
 
       </MainContainer>
