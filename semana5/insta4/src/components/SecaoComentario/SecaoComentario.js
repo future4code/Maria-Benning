@@ -17,20 +17,19 @@ export class SecaoComentario extends Component {
      comentario:" ",
 	}
 
-	onChangeComentario(event) {
-		this.setState({Coment:event.target.coment
-		})
-			console.log(this.state.value)
+	onChangeComentario = (event) => {
+		this.setState({
+			comentario:event.target.value})
 	}
 
-	
+
 
 	render() {
 		return <CommentContainer>
 			<InputComentario
 				placeholder={'Comentário'}
 				value={'this.state.Comentario'}
-				onChange={this.onChangeComentario}
+				onChange={this.onChange.Comentario}
 			/>
 			<button onClick={this.props.aoEnviar}>Enviar</button>
 		</CommentContainer>
