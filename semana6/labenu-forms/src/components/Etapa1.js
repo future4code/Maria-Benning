@@ -5,29 +5,31 @@ import React from "react";
 
 
 
-function Etapa1() {
+export class Etapa1 extends React.Component {
+    render() {
   return (
     <div>
         <h1>ETAPA 1 - DADOS GERAIS</h1>
         <div>
-            <h2> Qual o seu nome? </h2>
+            <h3> Qual o seu nome? </h3>
             <input></input> 
         </div>
         <div>
-            <h2> Qual sua idade? </h2>
+            <h3> Qual sua idade? </h3>
             <input></input> 
         </div>
 
         <div>
-            <h2> Qual seu e-mail? </h2>
+            <h3> Qual seu e-mail? </h3>
             <input></input> 
         </div>
         <div>
-            <h2> Qual sua escolaridade? </h2>
+            <h3> Qual sua escolaridade? </h3>
             <input></input> 
         </div>
     </div>
   );
+}
 }
 
 export default Etapa1;

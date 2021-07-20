@@ -1,21 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import '../App.css';
 import React from "react";
 
-/*
 
 
-function Final() {
+export class Final extends React.Component {
+  render() {
+
   return (
     <div>
 <h1>O FORMULÁRIO ACABOU</h1>
-<h2>Muito obrigado por participar! Entraremos em contato</h2>
+<h3>Muito obrigado por participar! Entraremos em contato</h3>
 
       
     </div>
   );
 }
+  }
 
 export default Final;
 
-*/
+
+

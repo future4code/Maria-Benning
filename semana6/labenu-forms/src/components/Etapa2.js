@@ -1,18 +1,17 @@
 import '../App.css';
 import React from "react";
 
-
-
-function Etapa2() {
-  return (
+export class Etapa2 extends React.Component {
+  render(){
+return (
     <div>
 <h1>ETAPA 2 - INFORMAÇÕES DO ENSINO SUPERIOR</h1>
 <div>
-            <h2> Qual curso? </h2>
+            <h3> Qual curso? </h3>
             <input></input> 
         </div>
         <div>
-            <h2> Qual unidade de ensino? </h2>
+            <h3> Qual unidade de ensino? </h3>
             <input></input> 
         </div>
 
@@ -22,5 +21,5 @@ function Etapa2() {
 </div>
   );
 }
-
+}
 export default Etapa2;
