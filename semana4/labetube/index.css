@@ -1,0 +1,65 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.titulo{
+    background-color: chocolate;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2px;
+    height: 60px;
+    padding: 0 20px;
+}
+
+button{
+    height: 40px;
+    margin: 2px;
+}
+
+footer{
+    background-color: chocolate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+    height: 60px;
+    padding: 0 20px;
+}
+.tela-principal{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    
+
+    
+}
+
+video{
+    height: 150px;
+
+
+}
+body{
+height: 100vh;
+width: 100vw;
+}
+
+.container-de-video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    flex-direction: column
+}
+
+
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .tela-principal {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+    }
+
+   
