@@ -35,7 +35,7 @@ export const BotoesPerfil = styled.button `
 display: flex;
 flex-direction: center;
 align-items: center;
-justify-content: space-between;
+justify-content: space-around;
 width: 300px;
 height: 40px;
 margin: 40px;

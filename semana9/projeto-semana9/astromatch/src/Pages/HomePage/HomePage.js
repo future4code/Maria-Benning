@@ -30,24 +30,28 @@ export const HomePage = () => {
             })
     }
 
-    const choosePerson = (id, choice) => {
+    const choosePerson = (choice) => {
         console.log("Botão de escolha")
 
         const url = "https://us-central1-missao-newton.cloudfunctions.net/astroMatch/maria-benning-lovelace/choose-person"
 
         const body = {
-            "id": id,
+            "id": profile.id,
             "choice": choice
         }
         axios.post(url, body)
             .then((res) => {
-                console.log(res.data.id)
+                console.log(res.data.id.matches)
+                
             })
             .catch((err) => {
                 console.log(err.response)
             })
 
     }
+
+    
+
 
 
     return (

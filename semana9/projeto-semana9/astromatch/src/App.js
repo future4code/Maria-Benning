@@ -47,10 +47,15 @@ setTelaAtual(tela)
 
   return (
     <div>Astromatch
+
+      
       <button onClick= {()=>mudaTela("homepage")}>ir Home </button>
       <button onClick={()=>mudaTela("matchespages")}>Ir matche </button>
+      
       <button onClick={()=> cleanMatches()}> limpar Matches </button>
+      
       {escolherTela()}
+     
     </div>
   )
 
