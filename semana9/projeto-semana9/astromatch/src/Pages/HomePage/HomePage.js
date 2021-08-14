@@ -30,7 +30,7 @@ export const HomePage = () => {
             })
     }
 
-    const choosePerson = (id,choice) => {
+    const choosePerson = (id, choice) => {
         console.log("Botão de escolha")
 
         const url = "https://us-central1-missao-newton.cloudfunctions.net/astroMatch/maria-benning-lovelace/choose-person"
@@ -39,9 +39,9 @@ export const HomePage = () => {
             "id": id,
             "choice": choice
         }
-        axios.post(url,body)
-            .the((res) => {
-                console.log(res.data)
+        axios.post(url, body)
+            .then((res) => {
+                console.log(res.data.id)
             })
             .catch((err) => {
                 console.log(err.response)
@@ -52,17 +52,19 @@ export const HomePage = () => {
 
     return (
         <Container>
+            {!profile ? <div>Acabaram os perfis! Aperte o botão de limpar</div> :
             <Profile>
                 <ProfileImage src={profile.photo}></ProfileImage>
                 <h2>{profile.name},{profile.age}</h2>
                 <p>{profile.bio}</p>
             </Profile>
-
+        }
             <BotoesPerfil>
-
-                <button onClick={choosePerson}>💙</button>
-                <button onClick={choosePerson}>❌</button>
+            <button onClick={() => choosePerson(true)}>💙</button>
+            <button onClick={() => choosePerson(false)}>❌</button>
             </BotoesPerfil>
+        
+
         </Container>
     )
 
