@@ -1,5 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
+import { useHistory } from "react-router-dom";
+
+
+
 
 const ListContainer = styled.div `
 margin: 30px 0px;
@@ -21,13 +25,28 @@ const ButtonList = styled.div `
 `
 
  const  ListTripsPage = () => {
+   const history = useHistory ()
+  const goBack = () =>{
+  history.goBack()
+}
+
+const inscricao = () => {
+  history.push("/applicationform")
+
+
+
+}
+
     return (
       
+
+
+
       <ListContainer>
        <h1>Lista de Viagens</h1>
        <ButtonList>
-       <button>Voltar</button>
-       <button>Inscreva-se</button>
+       <button onClick={goBack}>Voltar</button>
+       <button onClick={inscricao}>Inscreva-se</button>
        </ButtonList>
       </ListContainer>
   

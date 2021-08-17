@@ -1,5 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
+import { useHistory } from "react-router-dom";
+
+
+
+
+
 
 const HomePageContainer = styled.div `
 margin: 30px 0px;
@@ -23,12 +29,28 @@ const ButtonInicio = styled.div `
 
 
  const  HomePage = () => {
+   const history = useHistory ()
+
+   const goToVerViagens = () => {
+   history.push("/listtrip")
+   
+   }
+
+
+  const goToLogin = () => {
+  history.push("/adminpage")
+  }
+
+
+
+
+   
     return (
       <HomePageContainer>
        <h1>LabeX</h1>
        <ButtonInicio>
-       <button>Ver Viagens</button>
-       <button>Área de Admin</button>
+       <button onClick={goToVerViagens}>Ver Viagens</button>
+       <button onClick={goToLogin}>Área de Admin</button>
        </ButtonInicio>
       </HomePageContainer>
     );

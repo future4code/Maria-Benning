@@ -3,6 +3,10 @@ import AdminHomePage from './pages/AdminHomePage';
 import HomePage from './pages/HomePage';
 import ListTripsPage from './pages/ListTripsPage';
 import ApplicationFormPage from './pages/ApplicationFormPage';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import styled from 'styled-components';
+import CreateTripPage from './pages/CreateTripPage';
+import LoginPage from './pages/LoginPage';
 
 
 
@@ -12,13 +16,7 @@ import ApplicationFormPage from './pages/ApplicationFormPage';
 
 
 
-
-
-const  App = () => {
-//redenrização condional
-// estado que diz qual é a tela que está aparecendo
-//  fução para mudar de tela
-
+const App = () => {
 
 
 
@@ -26,15 +24,38 @@ const  App = () => {
 
 
   return (
-    <div>
-      
-<HomePage></HomePage>
-<ListTripsPage></ListTripsPage>
+    <BrowserRouter>
+      <Switch>
 
-<ApplicationFormPage></ApplicationFormPage>
-<AdminHomePage></AdminHomePage>
-    </div>
+        <Route exact path={"/"}>
+        <HomePage />
+        </Route>
+
+        <Route exact path={"/listtrip"}>
+        <ListTripsPage />
+        </Route>
+
+        <Route exact path={"/applicationform"}>
+        <ApplicationFormPage />
+        </Route>
+
+        <Route exact path={"/adminpage"}>
+        <AdminHomePage/>
+        </Route>
+
+        <Route exact path={"/createtripage"}>
+        <CreateTripPage/>
+        </Route>
+
+        <Route exact path={"/loginpage"}>
+        <LoginPage/>
+        </Route>
+
+
+      </Switch>
+    </BrowserRouter>
   );
+
 }
 
 export default App;
