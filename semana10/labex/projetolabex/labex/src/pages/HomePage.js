@@ -1,31 +1,23 @@
 import React from 'react';
+import styled from 'styled-components';
+
+const HomePageContainer = styled.div `
 
 
 
 
+`
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-export default function CreateTripPage () {
+export default function HomePage () {
     return (
-      <div>
-       HomePage
-      </div>
+      <HomePageContainer>
+       <h1>LabeX</h1>
+       <button>Ver Viagens</button>
+       <button>Área de Admin</button>
+      </HomePageContainer>
     );
   }
   
