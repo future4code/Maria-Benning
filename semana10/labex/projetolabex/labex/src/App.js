@@ -7,7 +7,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import styled from 'styled-components';
 import CreateTripPage from './pages/CreateTripPage';
 import LoginPage from './pages/LoginPage';
-
+import axios from 'axios';
 
 
 
