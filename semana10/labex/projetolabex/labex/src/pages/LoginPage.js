@@ -46,13 +46,17 @@ const LoginPage = () => {
       } 
     })
       .then((res) => {
-        console.log("deu certo", res.data)
+        console.log("deu certo", res.data.token)
+        localStorage.setItem('token', res.data.token)
       })
       .catch((err) => {
         console.log("deu errado", err.response)
       })
 
   }
+
+
+
 
   return (
     <div>

@@ -5,7 +5,7 @@ import { useHistory } from "react-router-dom";
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import CreateTripPage from './CreateTripPage';
 import LoginPage from './LoginPage';
-
+import TripDetailsPage from './TripDetailsPage';
 
 
  const AdminHomePage = () => {
@@ -24,10 +24,15 @@ const goToLogout = () => {
   history.push("/loginpage")
 }
 
+
+
+
+
     return (
       <div>
       
       <h1>Painel Administrativo</h1>
+      
       <button onClick={goBack}>voltar</button>
       <button onClick={goToCriarViagem}>Criar Viagem</button>
       <button onClick={goToLogout}>Logout</button>

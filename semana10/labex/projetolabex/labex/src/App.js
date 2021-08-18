@@ -8,7 +8,7 @@ import styled from 'styled-components';
 import CreateTripPage from './pages/CreateTripPage';
 import LoginPage from './pages/LoginPage';
 import axios from 'axios';
-
+import TripDetailsPage from './pages/TripDetailsPage';
 
 
 
@@ -51,6 +51,9 @@ const App = () => {
         <LoginPage/>
         </Route>
 
+        <Route exact path={"/trippage"}>
+        <TripDetailsPage/>
+        </Route>
 
       </Switch>
     </BrowserRouter>
