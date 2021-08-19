@@ -16,7 +16,7 @@ import axios from 'axios';
 }
 
 const goToCriarViagem = () =>{
-  history.push("/createtripage")
+  history.push("/createtripage")  
 }
 
 
