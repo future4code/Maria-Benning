@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Router from './routes/Router';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { ThemeProvider } from '@material-ui/core/styles';
+import theme from './constants/theme';
 
 
 
@@ -10,10 +12,10 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 const  App = () => {
   return (
-    <div>
+    <ThemeProvider theme={theme}>
        <Router/>
        
-    </div>
+    </ThemeProvider>
   );
 }
 

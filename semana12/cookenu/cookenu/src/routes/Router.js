@@ -8,7 +8,7 @@ import LoginPage from '../pages/LoginPage/LoginPage';
 import RecipeDetailPage from '../pages/RecipeDetailPage/RecipeDetailPage';
 import RecipeListPage from '../pages/RecipeListPage/RecipeListPage';
 import SignUpPage from '../pages/SignUpPage/SignUpPage';
-
+import Header from '../components/Header/Header';
 
 
 
@@ -16,6 +16,7 @@ import SignUpPage from '../pages/SignUpPage/SignUpPage';
 const Router = () => {
     return (
     <BrowserRouter>
+    <Header>
         <Switch>
             <Route exact path="/login">
                 <AddRecipesPage />
@@ -40,6 +41,7 @@ const Router = () => {
                 <ErrorPage />
             </Route>
             </Switch>
+            </Header>
         </BrowserRouter>
     )
 }
