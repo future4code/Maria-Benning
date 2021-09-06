@@ -4,7 +4,7 @@ import { StyledToolbar } from './styled';
 import Button from '@material-ui/core/Button';
 import { goToRecipeList, goToLogin } from '../../routes/coordinator';
 import { useTheme } from '@material-ui/core';
-import { useHistory } from 'react-router';
+import { useHistory } from 'react-router-dom';
 
 
 
@@ -17,8 +17,8 @@ const Header = () => {
     
       <AppBar position="static">
         <StyledToolbar>
-          <Button onClik={() => goToRecipeList(history)}color="inherit">Cokenu</Button>
-          <Button onClik={() => goToLogin(history)}color="inherit">Login</Button>
+          <Button onClick={() => goToRecipeList(history)}color="inherit">Cokenu</Button>
+          <Button onClick={() => goToLogin(history)}color="inherit">Login</Button>
         </StyledToolbar>
       </AppBar>
       

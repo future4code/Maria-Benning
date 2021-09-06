@@ -19,23 +19,23 @@ const Router = () => {
     <Header>
         <Switch>
             <Route exact path="/login">
-                <AddRecipesPage />
+                <LoginPage/>
             </Route>
 
             <Route exact path="/cadastro">
-                <LoginPage />
+                <SignUpPage />
             </Route>
 
             <Route exact path="/">
-                <RecipeDetailPage />
-            </Route>
-
-            <Route exact path="/adicionar-receita">
                 <RecipeListPage />
             </Route>
 
+            <Route exact path="/adicionar-receita">
+                <AddRecipesPage />
+            </Route>
+
             <Route exact path="/detalhe/:id">
-                <SignUpPage />
+                <RecipeDetailPage />
             </Route>
             <Route>
                 <ErrorPage />
