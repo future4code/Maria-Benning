@@ -6,7 +6,7 @@ import React from 'react';
 const  RecipeDetailPage = () => {
     return (
       <div>
-         RecipeDetailPage
+         <h1>RecipeDetailPage</h1>
       </div>
     );
   }

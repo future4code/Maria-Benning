@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import AddRecipesPage from '../pages/AddRecipesPage/AddRecipesPage';
@@ -15,33 +15,33 @@ import Header from '../components/Header/Header';
 
 const Router = () => {
     return (
-    <BrowserRouter>
-    <Header>
-        <Switch>
-            <Route exact path="/login">
-                <LoginPage/>
-            </Route>
+        <BrowserRouter>
+            <Header/>
+                <Switch>
+                    <Route exact path="/login">
+                        <LoginPage />
+                    </Route>
 
-            <Route exact path="/cadastro">
-                <SignUpPage />
-            </Route>
+                    <Route exact path="/cadastro">
+                        <SignUpPage />
+                    </Route>
 
-            <Route exact path="/">
-                <RecipeListPage />
-            </Route>
+                    <Route exact path="/">
+                        <RecipeListPage />
+                    </Route>
 
-            <Route exact path="/adicionar-receita">
-                <AddRecipesPage />
-            </Route>
+                    <Route exact path="/adicionar-receita">
+                        <AddRecipesPage />
+                    </Route>
 
-            <Route exact path="/detalhe/:id">
-                <RecipeDetailPage />
-            </Route>
-            <Route>
-                <ErrorPage />
-            </Route>
-            </Switch>
-            </Header>
+                    <Route exact path="/detalhe/:id">
+                        <RecipeDetailPage />
+                    </Route>
+                    <Route>
+                        <ErrorPage />
+                    </Route>
+                </Switch>
+            
         </BrowserRouter>
     )
 }

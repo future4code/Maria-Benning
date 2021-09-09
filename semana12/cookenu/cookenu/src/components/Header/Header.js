@@ -3,7 +3,6 @@ import AppBar from '@material-ui/core/AppBar';
 import { StyledToolbar } from './styled';
 import Button from '@material-ui/core/Button';
 import { goToRecipeList, goToLogin } from '../../routes/coordinator';
-import { useTheme } from '@material-ui/core';
 import { useHistory } from 'react-router-dom';
 
 

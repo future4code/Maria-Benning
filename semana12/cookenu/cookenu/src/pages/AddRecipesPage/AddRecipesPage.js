@@ -6,7 +6,7 @@ import React from 'react';
 const  AddRecipesPage = () => {
     return (
       <div>
-         AddRecipesPage
+         <h1>AddRecipesPage</h1>
       </div>
     );
   }

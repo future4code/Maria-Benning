@@ -6,7 +6,7 @@ import React from 'react';
 const SignUpPage = () => {
     return (
       <div>
-        SignUpPage
+        <h1>SignUpPage</h1>
       </div>
     );
   }
