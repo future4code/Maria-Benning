@@ -3,8 +3,8 @@ import React from 'react';
 import { InputsContainer } from './styled'
 import { Button, TextField } from '@material-ui/core';
 import useForm from "../../hooks/useForm"
-
-
+import axios from 'axios';
+import {BASE_URL} from "../../constants/url"
 
 const LoginForm = () => {
     const [form, onChange, clear] = useForm({ email: "", password: "" })
@@ -12,7 +12,14 @@ const LoginForm = () => {
 
     const onSubmitForm = (event) => {
         event.preventDefault()
-console.log(form)
+ login()
+
+    }
+
+    const login = () =>{
+axios.post(`${BASE_URL}/user/login`, form)
+.then((res)=>console.log(res))
+.catch((err)=>console.log(err))
 
     }
     return (

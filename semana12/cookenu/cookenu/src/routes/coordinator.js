@@ -22,7 +22,7 @@ export const goToRecipesDetail = (history, id) => {
 }
 
 
-export const goToRecipeList = (history) => {
+export const goToRecipesList = (history) => {
     history.push("/")
 }
 

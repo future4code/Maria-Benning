@@ -1,2 +1,2 @@
 
-export const BASE_URL = "https://cookenu-api.herokuapp.com/recipe/feed"
+export const BASE_URL = "https://cookenu-api.herokuapp.com"
