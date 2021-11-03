@@ -28,7 +28,7 @@ export const connection = knex({
 });
 
 
-app.get('/ping', () => {
+app.get('/ping', (req, res) => {
 
 try {
    console.log('pong')
